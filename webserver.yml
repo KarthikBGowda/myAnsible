@@ -4,5 +4,6 @@
     tasks:
       - name: Installing Apache server in node
         apt:
-        name: apache2
-        state: present
+          name: apache2
+          state: present
+      
