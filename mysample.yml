@@ -4,11 +4,11 @@
     task:
       -name: Installation of tree
        apt:
-          name: tree
-          state: present
+         name: tree
+         state: present
 
       -name: Installation of git
        apt:
-          name: git
-          state: present 
+         name: git
+         state: present 
           
