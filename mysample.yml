@@ -2,13 +2,13 @@
   - hosts: all
     become: yes
     task:
-      -name: Installation of tree
-       apt:
-         name: tree
-         state: present
+      - name: Installation of tree
+        apt:
+          name: tree
+          state: present
 
-      -name: Installation of git
-       apt:
-         name: git
-         state: present 
+      - name: Installation of git
+        apt:
+          name: git
+          state: present 
           
