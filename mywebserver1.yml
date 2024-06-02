@@ -1,0 +1,4 @@
+---
+  - hosts: mywebservers
+    become: yes
+    gather_fatcs: yes
