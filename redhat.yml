@@ -6,7 +6,7 @@
       - name: Installing Apache server in node
         apt:
           name: apache2
-          state: present
+          state: latest
         when: ansible_os_family=="Debian"
 
       - name: Starting apache2
@@ -21,4 +21,5 @@
           state: present
         when: ansible_os_family=="RedHat"
 
+      
       
