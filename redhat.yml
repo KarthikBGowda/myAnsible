@@ -16,11 +16,11 @@
         when: ansible_os_family=="Debian"
 
       - name: Install httpd webserver on redhat
-        dnf:
+        yum:
           name: httpd
           state: present
         when: ansible_os_family=="RedHat"
-      - name: Start Apache service
+      - name: Start Apache service on redhat
         service:
           name: httpd
           state: started
