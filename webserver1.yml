@@ -2,3 +2,8 @@
   - hosts: mywebservers
     become: yes
     gather_fatcs: yes
+    tasks:
+      - name: Installing Apache server in node
+        apt:
+          name: apache2
+          state: present
