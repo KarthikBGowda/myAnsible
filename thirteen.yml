@@ -1,0 +1,31 @@
+---
+  - hosts: mywebservers
+    become: yes
+    gather_facts: yes
+    tasks:
+      - name: Installing Apache server in node
+        apt:
+          name: "{{a}}"
+          state: present
+        when: ansible_os_family=="Debian"
+
+      - name: Starting apache2
+        service: 
+          name: "{{a}}"
+          state: started
+        when: ansible_os_family=="Debian"
+
+      - name: Install httpd webserver on redhat
+        yum:
+          name: "{{b}}"
+          state: present
+        when: ansible_os_family=="RedHat"
+      - name: Start Apache service on redhat
+        service:
+          name: "{{b}}"
+          state: started
+          enabled: yes  
+        when: ansible_os_family=="RedHat"
+     
+
+      
