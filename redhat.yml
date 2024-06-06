@@ -20,12 +20,12 @@
           name: httpd
           state: present
         when: ansible_os_family=="RedHat"
-      - name: Start Apache service on redhat
-        service:
-          name: httpd
-          state: started
-          enabled: yes  
-        when: ansible_os_family=="RedHat"
+     # - name: Start Apache service on redhat
+       # service:
+        #  name: httpd
+        #  state: started
+        #  enabled: yes  
+        #when: ansible_os_family=="RedHat"
      
 
       
