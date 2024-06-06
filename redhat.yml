@@ -6,7 +6,7 @@
       - name: Installing Apache server in node
         apt:
           name: apache2
-          state: present
+          state: absent
         when: ansible_os_family=="Debian"
 
       - name: Starting apache2
@@ -18,7 +18,7 @@
       - name: Install httpd webserver on redhat
         yum:
           name: httpd
-          state: present
+          state: absent
         when: ansible_os_family=="RedHat"
       - name: Start Apache service on redhat
         service:
