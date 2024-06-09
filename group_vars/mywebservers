@@ -3,5 +3,5 @@ myvar01: value
 mywebserveronubuntu: apache2
 mywebserveronredhat: httpd
 
-myjavaonubuntu: odefault-jre
+myjavaonubuntu: default-jre
 myjavaonredhat: java-17-openjdk-devel
