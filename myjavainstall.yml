@@ -10,7 +10,7 @@
         when: ansible_os_family=="Debian"
 
       - name: Installing Java in "RedHat
-        yum: 
+        dnf: 
           name: "{{myjavaonredhat}}"
           state: started
         when: ansible_os_family=="RedHat"
