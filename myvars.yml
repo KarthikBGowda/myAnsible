@@ -2,8 +2,8 @@
   - hosts: 10.0.0.5
     become: yes
     vars:
-      myvar01: git
-      myvar02: tree
+      myvar01: tree
+      myvar02: git
       myvar03: wget
 
     tasks:
