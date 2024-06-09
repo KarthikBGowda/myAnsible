@@ -5,4 +5,5 @@ mywebserveronredhat: httpd
 
 myjavaonubuntu: java-1.8.0-openjdk-devel
 
-myjavaonredhat: java-17-openjdk-devel
+myjavaonredhat: java-1.8.0-openjdk-devel
+
