@@ -1,4 +1,5 @@
 ---
 myvar01: value
-a: apache2
-b: httpd
+mywebserveronubuntu: apache2
+mywebserveronredhat: httpd
+
