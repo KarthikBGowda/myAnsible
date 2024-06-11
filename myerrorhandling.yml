@@ -11,7 +11,7 @@
     apt:
       name: tree
       stte: present
-    ignore_errors: no
+    ignore_errors: yes
 
   - name: Install wget
     apt:
