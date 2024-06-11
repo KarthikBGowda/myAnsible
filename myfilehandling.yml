@@ -7,3 +7,8 @@
     apt:
       name: apache2
       state: present
+
+  - name: Copy static file from master to Nodes
+    copy:
+      src: mystaticfile
+      dest: /home/karthik/
