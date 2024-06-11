@@ -1,6 +1,6 @@
 ---
 - hosts: 10.0.0.5
-  becoome: yes
+  become: yes
   tasks:
   - name: Install git
     apt:
