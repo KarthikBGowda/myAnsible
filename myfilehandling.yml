@@ -17,3 +17,9 @@
     template:
       src: mydynofile.j2
       dest: /var/www/html/index.html
+
+  - name: Download Internet files into side 
+    get_url:
+      url: https://download.teamviewer.com/download/linux/teamviewer-host_amd64.deb
+      dest: /home/karthik/teamviewer-host_amd64.deb
+      force_basic_auth: yes
