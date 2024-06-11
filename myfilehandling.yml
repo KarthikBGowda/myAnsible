@@ -12,3 +12,8 @@
     copy:
       src: mystaticfile
       dest: /home/karthik/
+
+  - name: Copy my dyno file from master to Nodes
+    template:
+      src: mydynofile.j2
+      dest: /var/www/html/index.html
