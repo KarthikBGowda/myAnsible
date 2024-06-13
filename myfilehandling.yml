@@ -25,7 +25,7 @@
       url: https://download.teamviewer.com/download/linux/teamviewer-host_amd64.deb
       dest: /home/karthik/teamviewer-host_amd64.deb
       force_basic_auth: yes
-
+  handlers:
   - name: Restartwebserver
     service:
       name: apache2
