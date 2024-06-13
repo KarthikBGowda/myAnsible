@@ -20,7 +20,7 @@
       dest: /var/www/html/index.html
     notify: Restartwebserver
 
-  - name: Download Internet files into side 
+  - name: Download Internet files into node side 
     get_url:
       url: https://download.teamviewer.com/download/linux/teamviewer-host_amd64.deb
       dest: /home/karthik/teamviewer-host_amd64.deb
