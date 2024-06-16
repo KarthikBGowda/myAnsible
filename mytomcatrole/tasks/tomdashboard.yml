@@ -6,16 +6,16 @@
 
 - name: Copy tomcat context file into ansible nodes
   template:
-    src: mytomcatrole\templates\mytomcontext.j2
+    src: mytomcontext.j2
     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: Copy tomcat host context file into ansible nodes
   template:
-    src: mytomcatrole\templates\mytomhostcontext.j2
+    src: mytomhostcontext.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
 
 - name: Copy tomcat service file into ansible nodes
   template:
-    src: mytomcatrole\templates\mytomservice.j2
+    src: mytomservice.j2
     dest: /etc/systemd/system/tomcat.service
     
